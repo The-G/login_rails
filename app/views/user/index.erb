@@ -1,0 +1,12 @@
+<h1>INDEX</h1>
+
+<% @user.each do |u| %>
+    <%= u.email %> |
+    <%= u.password %> |
+    <a href="/user/modify/<%=u.id%>">Modify</a> |
+    <a href="/user/destroy/<%=u.id%>">Delete</a>
+    <br>
+<% end %>
+<br>
+<a href="/user/new">Sign Up</a>
+

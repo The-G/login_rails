@@ -1,0 +1,10 @@
+<h1>UPDATE</h1>
+
+<form action="/user/update">
+  <input type="hidden" name="id" value="<%=@user.id%>" />
+  email : <input type="email" name="email" value="<%=@user.email%>" />
+  password : <input type="password" name="password" value="<%=@user.password%>" />
+  <input type="submit" value="sign up"/>
+</form>
+
+<a href="/">go home</a>
