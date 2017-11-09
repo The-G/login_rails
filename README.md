@@ -17,3 +17,11 @@
   - user/modify/:id
   - user/update
   - user/destroy/:id
+ 
+- Practice rails_db gem
+
+- MD5 
+require 'digest' in irb
+Digest::MD5.hexdigest('1234')
+
+- 'rake db:drop' to recreate model with Encryption password

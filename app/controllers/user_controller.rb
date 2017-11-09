@@ -8,14 +8,15 @@ class UserController < ApplicationController
     end
     
     def create
+        require 'digest'
         @email = params[:email]
         @password = params[:password]
+        hidden_password = Digest::MD5.hexdigest(@password)
         
         User.create(
             email: @email,
-            password: @password
+            password: hidden_password
         )
-        redirect_to '/'
     end
    
     def modify
