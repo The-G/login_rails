@@ -25,3 +25,6 @@ require 'digest' in irb
 Digest::MD5.hexdigest('1234')
 
 - 'rake db:drop' to recreate model with Encryption password
+
+- session / cookies
+  - add login process to check email/password

@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/user/modify/:id' => 'user#modify'
   get '/user/update'
   get '/user/destroy/:id' => 'user#destroy'
+  get '/user/login'
+  get '/user/login_action'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
